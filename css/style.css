@@ -1,0 +1,149 @@
+/* PADRÕES */
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.center{
+    
+    max-width: 12800px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+/* HEADER */
+
+header{
+    
+    background-color: darkgray;
+    color:white;
+    padding: 10px 0;
+}
+
+header > .center{
+    
+    display: flex;
+}
+
+/* BODY */
+
+.logo{
+    
+    width: 50%;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu{
+    
+    width: 50%;
+    float:right;
+    padding: 5px 0;
+    text-align: right;
+}
+
+.menu li{
+    
+    display:inline-block;
+    padding-right: 5px;
+}
+
+.menu a{
+    
+    color: white;
+    text-decoration-line: none;
+    
+}
+
+/*SECTION TEXT-ACTION*/
+
+.center > h3 > img{
+    
+    width: 20px;
+}
+
+.text-action{
+    
+    text-align: center;
+    background-color:lightgray;
+    padding: 30px 0;
+    
+}
+
+.text-action h3, h2{
+    
+    font-weight: normal;
+    color: black;
+    padding-bottom: 8px;
+}
+
+h2 > b{
+    
+    color: salmon;
+    font-weight: bold;
+}
+
+/*SECTION GALERY*/
+
+.galery{
+    
+    padding: 30px 0;
+    
+}
+
+.galery .center{
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.single-img{
+    
+    border: 2px solid gray;
+    border-radius: 2px;
+    padding: 5px;
+    height: 100%;
+            
+}
+
+.border-wraper{
+    
+    width: 33.33%;
+    padding: 30px;
+    
+}
+
+.single-img img{
+    
+    max-width: 100%;
+}
+
+.single-img h2{
+    
+    padding: 0 8px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:6px 
+}
+
+.single-img p{
+    
+    font-weight: normal;
+    padding-top: 3px;
+}
+
+/*CONFIGURAÇÕES PARA TELAS MENORES*/
+
+@media screen and (max-width: 768px){
+    
+    .border-wraper{
+        width: 100%;
+        padding: 20px;
+    }
+}
+
